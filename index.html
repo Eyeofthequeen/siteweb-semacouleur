@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SEMA couleurs</title>
+		<link rel="stylesheet" href="./css/app.css">
+		<link rel="stylesheet" href="./css/full-screen-compagny-name.css">
+		<link rel="stylesheet" href="./css/navigation.css">
+		<link rel="stylesheet" href="./css/about-us.css">
+		<link rel="stylesheet" href="./css/contact-form.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<script src="./js/tunnels.js"></script>
+	</head>
+	<body>
+		<script src="./js/app.js"></script>
+
+		<navigation></navigation>
+		<full-screen-company-name></full-screen-company-name>
+
+		<div id='content' class="page">
+			<about-us></about-us>
+			<div class="contact-us-container">
+				<form
+					class="contact-us-form"
+					action="https://formspree.io/f/myyqrble"
+					method="POST"
+				>
+					<div class="contact-title">
+						<span class="text--title">CONTACTEZ-NOUS</span>
+						<p class="text--normal">Laissez-nous un message et nous vous répondrons dès que possible.</p>
+					</div>
+					<input type="email" name="email" placeholder="Votre courriel">
+					<textarea placeholder="Votre message" name="message"></textarea>
+					<button class="button" type="submit">Envoyer →</button>
+				</form>
+			</div>
+
+			<footer></footer>
+		</div>
+	</body>
+</html>

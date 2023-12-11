@@ -1,0 +1,74 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-us-line {
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.photos {
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photos > img {
+  margin: 1rem;
+}
+
+.photos img {
+  max-width: calc(600px + 1rem);
+  border-radius: 15px;
+}
+
+.photos-sub-two {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.photos-sub-two img {
+  max-width: 300px;
+}
+
+.mission {
+  gap: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mission-point {
+  color: white;
+  font-size: clamp(1.375rem, 0.781rem + 2.969vw, 3.75rem);
+}
+
+.mission-point--right {
+  text-align: right;
+}
+
+.mission-seperator {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  opacity: 30%;
+}
+
+.separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 15%;
+}
+
+.mission-point-emphase {
+  font-weight: bold;
+  text-decoration: underline;
+}

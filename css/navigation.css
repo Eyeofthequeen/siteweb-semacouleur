@@ -1,0 +1,90 @@
+.menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  background: inherit;
+  color: white;
+  display: flex;
+  gap: 2rem;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.scroll {
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  color: white;
+  opacity: 40%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.double-chevron {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px
+}
+.double-chevron::after,
+.double-chevron::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 7px;
+    top: 3px
+}
+.double-chevron::after {
+    top: 8px
+}
+
+.tab {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  transition: width 0.4s ease-in-out;
+}
+
+.tab:hover::after {
+  width: 80%;
+}
+
+
