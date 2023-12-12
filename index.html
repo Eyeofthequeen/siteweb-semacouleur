@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>SEMA couleurs</title>
 		<link rel="stylesheet" href="./css/app.css">
+		<link rel="stylesheet" href="./css/variables.css">
 		<link rel="stylesheet" href="./css/full-screen-compagny-name.css">
 		<link rel="stylesheet" href="./css/navigation.css">
 		<link rel="stylesheet" href="./css/about-us.css">
 		<link rel="stylesheet" href="./css/contact-form.css">
 		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/dripping-with-font.css">
 		<script src="./js/tunnels.js"></script>
 	</head>
 	<body>
@@ -20,23 +22,10 @@
 		<full-screen-company-name></full-screen-company-name>
 
 		<div id='content' class="page">
+			<img class="paint-dripping" src="./assets/paint-dripping.svg" alt="" height="300">
 			<about-us></about-us>
-			<div class="contact-us-container">
-				<form
-					class="contact-us-form"
-					action="https://formspree.io/f/myyqrble"
-					method="POST"
-				>
-					<div class="contact-title">
-						<span class="text--title">CONTACTEZ-NOUS</span>
-						<p class="text--normal">Laissez-nous un message et nous vous répondrons dès que possible.</p>
-					</div>
-					<input type="email" name="email" placeholder="Votre courriel">
-					<textarea placeholder="Votre message" name="message"></textarea>
-					<button class="button" type="submit">Envoyer →</button>
-				</form>
-			</div>
-
+			<dripping-with-font></dripping-with-font>
+			<contact></contact>
 			<footer></footer>
 		</div>
 	</body>
