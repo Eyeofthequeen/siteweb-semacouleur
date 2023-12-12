@@ -9,7 +9,7 @@ const scrollToContact = () => {
 }
 
 const scrollToInfos = () => { 
-  var targetSection = document.querySelector('.about-us')
+  var targetSection = document.querySelector('.page')
   goto(targetSection)
 }
 
