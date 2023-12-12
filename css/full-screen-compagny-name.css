@@ -44,11 +44,18 @@
   height: 2px;
   width: 100%;
   background: white;
+  box-sizing: border-box;
 }
 
 @media (max-width: 400px) { /* Small screens */
   .video-title video {
     height: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .video-title video {
+    width: 100%;
   }
 }
 
