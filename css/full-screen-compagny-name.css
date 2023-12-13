@@ -5,6 +5,7 @@
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  background: #FFFFFF55;
 }
 
 .video-title .title {
